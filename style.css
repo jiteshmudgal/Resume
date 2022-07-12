@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 300px 700px;
+}
+.left-section{
+    grid-column: span 1;
+    background-color: teal;
+    background: -webkit-linear-gradient(to right, teal, #800020);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, teal, #800020); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.right-section{
+    grid-column: span 1 / span 2;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000);
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-image{
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 60%;
+}
+.name{
+    font-size: 1.2rem;
+    color: antiquewhite;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+.designation{
+    font-size: 1rem;
+    color: blanchedalmond;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+hr{
+    color: antiquewhite;
+    
+}
+.description{
+    font-size: 0.75rem;
+    color: bisque;
+    text-align: center;
+    padding: 1rem;
+}
+li{
+    list-style-type: none;
+}
+.icon{
+    color: antiquewhite;
+    font-size: 1.25rem;
+    transition: color 0.4s;
+    margin: 2px;
+}
+.icon:hover{
+    color: darkblue;
+}
+.social-media > li{
+    display: inline;
+    justify-content: space-around;
+    padding: 10px;
+    margin-left: 50px;
+}
+.social-media #icon-id{
+    font-size: 2rem;
+    color: antiquewhite;
+    transition: color 0.4s;
+}
+.social-media #icon-id:hover{
+    color: darkblue;
+}
+.skills-title{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: antiquewhite;
+}
+.skill-name{
+    font-size: .65rem;
+    font-weight: .65rem;
+    text-align: left;
+    padding-bottom: .5rem;
+    color: antiquewhite;
+}
+.progress-bar{
+    border:solid 1px antiquewhite;
+    height: 4px;
+    border-radius: 10%;
+    border-collapse: collapse;
+    background-color: white;
+}
+.para{
+    font-size: 1rem;
+    color: antiquewhite;
+}
+.right-title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    color: teal;
+    text-transform: uppercase;
+}
+
+.right-main-content{
+    padding: 2rem 3rem 2rem 3rem;
+}
+.education-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-left-grid{
+    width: auto;
+    color: antiquewhite;
+}
+.right-right-grid{
+    width: auto;
+    color: antiquewhite;
+    text-align: center;
+}
+@media (max-width: 673px) {
+    .main-content {
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    min-height: 1000px;
+     }
+    }
